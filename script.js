@@ -23,6 +23,5 @@ function areaTSA(r,s) {
     return Math.PI* r * ( r + s )
 }
 
-
 var output = areaTSA(10,20);
 console.log(output)
