@@ -22,6 +22,18 @@ function areaTA(a,b,h) {
 function areaTSA(r,s) {
     return Math.PI* r * ( r + s )
 }
+// the volume of spherical cap 
+function areaVSC(r,h){
+    return Math.PI/6*(3*(r*r)+(h*h))*h
+}
+// total surface area of a pyramid edges 
+function areaVSC(b,a){
+    return Math.sqrt((b*b)-(a*a)/4) 
+}
+// total surface area of rectangular parallelepiped
+function areaARP(a,b,c){
+    return  2* ( a*b + a*c + b*c )
+}
 
-var output = areaTSA(10,20);
+var output = areaARP(5,4,4);
 console.log(output)
