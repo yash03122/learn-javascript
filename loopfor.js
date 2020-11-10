@@ -1,9 +1,12 @@
- 
-var text="";
-for (var i = 1; i<= 100000; i=i*1)
+ function factorial(num) 
  {
-     
-     
-    console.log(i)
-  }
- 
+  var ans=1;
+  for (var i =1 ; i<= num;i++)
+  {
+      ans = ans * i;
+   }
+
+   return ans;
+ }
+
+ console.log(factorial(5)+factorial(5))
